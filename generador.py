@@ -1,4 +1,3 @@
-from tkinter import X
 import xlsxwriter
 import random, time
 
