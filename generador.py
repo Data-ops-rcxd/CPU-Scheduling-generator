@@ -24,7 +24,6 @@ def fcfs(pburst, parrvl):
             gc += pburst[i]
             wt[i] = 0
             tat[i] = pburst[i]
-            #print(i)
             worksheet.write('A'+ str(jum+i+2),i+1)
             worksheet.write('B'+ str(jum+i+2),pburst[i])
             worksheet.write('C'+ str(jum+i+2),parrvl[i])
@@ -35,7 +34,6 @@ def fcfs(pburst, parrvl):
             gc =+ pburst[i]
             wt[i] = pburst[i-1] - parrvl[i]
             tat[i] = pburst[i] + wt[i]
-            #print(i)
             worksheet.write('A'+ str(jum+i+2),i+1)
             worksheet.write('B'+ str(jum+i+2),pburst[i])
             worksheet.write('C'+ str(jum+i+2),parrvl[i])
@@ -47,9 +45,7 @@ def fcfs(pburst, parrvl):
 
     worksheet.write('F'+ str(jum+i+2),promwt)
     worksheet.write('G'+ str(jum+i+2),promtat)
-        
-    #print(wtprom)
-    #print(tatprom)
+
     #Tiempo de espera es = Burst time del anterior - Arrival time
     #Turn around time = Burst time propio + tiempo de espera
     return promwt, promtat
