@@ -1,7 +1,7 @@
 # CPU-Scheduling-generator
 just a micro test 
 
-This code generate a numbers of "process" (it can be change), then it use the FCFS scheduling method to create a gant table (is an excel file) with the values of [Burst/arrival/waiting/turnaround] times and a average of waiting and turnaround, also shows the running time of the code.
+This code generate a numbers of "process" (it can be change), then it use the FCFS scheduling method (at the moment) to create a gant table (is an excel file) with the values of [Burst/arrival/waiting/turnaround] times and a average of waiting and turnaround, also shows the running time of the code.
 
 To use it please install the xlsxwriter module with this code: "pip install XlsxWriter"
 
